@@ -34,7 +34,7 @@
 <body>
   <h1>Privacy Policy</h1>
   <p class="sub">BoostPro EQ and Volume</p>
-  <p><strong>Last updated: September 25, 2026</strong></p>
+  <p><strong>Last updated: October 2, 2026</strong></p>
 
   <div class="badge">BoostPro collects no data. None.</div>
 
@@ -71,8 +71,8 @@
     <li><strong>Modify audio settings</strong> — to attach the equalizer and limiter to your device's audio output.</li>
     <li><strong>Foreground service</strong> — to keep the effect running and provide the quick-toggle notification.</li>
     <li><strong>Post notifications</strong> — to show that quick-toggle notification.</li>
-    <li><strong>Receive boot completed</strong> — only if you enable "Start on boot", to restore your effect after a restart.</li>
-    <li><strong>Google Play billing</strong> — only to take an optional tip, if you choose to leave one. Google Play handles the payment; the app receives no payment details.</li>
+    <li><strong>Receive boot completed</strong> — only if you enable "Start on boot" and the EQ was on, to turn it back on after a restart. (After an app update, an EQ that was on comes back on too.)</li>
+    <li><strong>Google Play billing</strong> (and <strong>view network connections</strong>, which Google's billing library adds) — only to take an optional tip, if you choose to leave one. Google Play handles the payment; the app receives no payment details.</li>
   </ul>
   <p>We do not request location, contacts, phone, camera, microphone, or broad storage access.</p>
 
@@ -81,7 +81,10 @@
     BoostPro contains no third-party advertising, analytics, or tracking SDKs. Every feature is
     free. If you choose to leave an optional tip (Settings → Donate), Google Play handles the
     purchase under Google's own privacy policy; BoostPro never sees your payment details and keeps
-    no record of it. A tip unlocks nothing, and the app never asks.
+    no record of the payment. A tip unlocks nothing, and the app never asks.
+  </p>
+  <p>
+    Google's billing library, which the tip jar uses, includes a diagnostics component that would send anonymous billing diagnostics to Google. BoostPro has no internet permission, so Android blocks it and nothing is sent. While a tip you started is still being finished, BoostPro keeps a small marker on your device so it can complete the tip the next time you open it; it never records what you paid.
   </p>
 
   <h2>Children's privacy</h2>
